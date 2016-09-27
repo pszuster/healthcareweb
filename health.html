@@ -348,8 +348,7 @@ $( "#dialog-link, #icons li" ).hover(
 		$.ajax({ 
 		   type: "GET",
 		   dataType: "jsonp",
-		   url: "http://healthwebconsole-demo.rhel-cdk.10.1.2.2.
-			.io/his/prescribe/"+$('input[name=hisId]').val()+"/"+$('#interval option:selected').val()+"/"+$('#drugs option:selected').val(),
+		   url: "http://healthwebconsole-demo.192.168.99.100.xip.io/his/prescribe/"+$('input[name=hisId]').val()+"/"+$('#interval option:selected').val()+"/"+$('#drugs option:selected').val(),
 		   success: function(data){        
 		     alert(data);
 		   }
